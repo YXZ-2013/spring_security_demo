@@ -22,7 +22,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<!-- 注解驱动 -->
 	<mvc:annotation-driven />
 	<!-- 使Spring支持自动检测组件,自动扫描controller -->
-	<context:component-scan base-package="com.yin.project.authorization" />
+	<context:component-scan base-package="com.yin.myproject.security.controller" />
 	<!-- 定义视图解析器 -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
