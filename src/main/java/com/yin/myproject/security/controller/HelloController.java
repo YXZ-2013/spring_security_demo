@@ -1,4 +1,4 @@
-package com.yin.myproject.scurity.controller;
+package com.yin.myproject.security.controller;
  
 import org.springframework.stereotype.Controller;
  
