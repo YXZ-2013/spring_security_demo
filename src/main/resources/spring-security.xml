@@ -4,16 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
-	<http pattern="/login1" security="none"></http>
+	<http pattern="/loginPage" security="none"></http>
 
 	<http auto-config="true" use-expressions="true">
 		<intercept-url pattern="/*" access="hasRole('ROLE_USER')" />
-		<!-- <form-login login-page="/login" authentication-failure-url="/login?error" -->
-		<!-- default-target-url="/welcome" username-parameter="username" -->
-		<!-- password-parameter="password" /> -->
-		<form-login login-page="/login1" always-use-default-target="true"
-			default-target-url="/welcome"/>
-		<csrf disabled="true" />
+		<form-login login-page="/loginPage" login-processing-url="/login" always-use-default-target="true"
+			default-target-url="/welcome" authentication-failure-url="/loginPage?error=error" />
+			<csrf disabled="true"/>
 	</http>
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider>
