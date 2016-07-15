@@ -20,8 +20,14 @@
 				<td><input type='password' name='password' /></td>
 			</tr>
 			<tr>
-				<td colspan='2'><input name="submit" type="submit"
-					value="Login" /></td>
+				<td colspan='2'>
+					<input id="remember-me" name="remember-me" type="checkbox" checked="checked"/>自动登录
+				</td>
+			</tr>
+			<tr>
+				<td colspan='2'>
+					<input name="submit" type="submit" value="Login" />
+				</td>
 			</tr>
 		</table>
 	</form>

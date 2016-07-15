@@ -12,6 +12,7 @@
 			always-use-default-target="true" default-target-url="/welcome"
 			authentication-failure-url="/loginPage?error=error" />
 		<logout logout-url="/logout" logout-success-url="/loginPage" invalidate-session="true"/>
+		<remember-me key="authorition" services-alias="" services-ref="" token-repository-ref="" token-validity-seconds="" use-secure-cookie="true" user-service-ref=""/>
 		<csrf disabled="true" />
 	</http>
 	<authentication-manager alias="authenticationManager">
