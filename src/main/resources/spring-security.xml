@@ -8,9 +8,11 @@
 
 	<http auto-config="true" use-expressions="true">
 		<intercept-url pattern="/*" access="hasRole('ROLE_USER')" />
-		<form-login login-page="/loginPage" login-processing-url="/login" always-use-default-target="true"
-			default-target-url="/welcome" authentication-failure-url="/loginPage?error=error" />
-			<csrf disabled="true"/>
+		<form-login login-page="/loginPage" login-processing-url="/login"
+			always-use-default-target="true" default-target-url="/welcome"
+			authentication-failure-url="/loginPage?error=error" />
+		<logout logout-url="/logout" logout-success-url="/loginPage" invalidate-session="true"/>
+		<csrf disabled="true" />
 	</http>
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider>
