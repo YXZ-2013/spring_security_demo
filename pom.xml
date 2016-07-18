@@ -10,6 +10,7 @@
 
 	<properties>
 		<spring.version>4.1.0.RELEASE</spring.version>
+		<druid-version>1.0.9</druid-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project_charset>UTF-8</project_charset>
 		<maven.compiler.source>1.7</maven.compiler.source>
@@ -71,6 +72,14 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-releasetrain</artifactId>
+			<version>Hopper-SR2</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1-b02</version>
@@ -90,6 +99,12 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 			<version>2.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid-version}</version>
 		</dependency>
 
 	</dependencies>
