@@ -17,11 +17,8 @@
 	</http>
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider>
-			<jdbc-user-service data-source-ref="datasource"/>
-<!-- 			<user-service> -->
-<!-- 				<user authorities="ROLE_USER" name="guest" password="guest" /> -->
-<!-- 			</user-service> -->
+			<jdbc-user-service data-source-ref="dataSource"/>
 		</authentication-provider>
 	</authentication-manager>
-
+	
 </bean:beans>
