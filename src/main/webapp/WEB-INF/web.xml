@@ -8,6 +8,7 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:applicationContext.xml</param-value>
+<!-- 		<param-value>classpath:spring-security.xml</param-value> -->
 	</context-param>
 
 	<!-- spring核心监听器 -->
@@ -41,11 +42,6 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
         <filter-name>springSecurityFilterChain</filter-name>  
         <url-pattern>/*</url-pattern>  
     </filter-mapping>
-    
-    <context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring-security.xml</param-value>
-	</context-param>
     
 	<!-- 配置默认过滤器 作用是像类似于css,jpg,js等的文件不被springMVC核心过滤器拦截 -->
 	<servlet-mapping>
